@@ -34,6 +34,10 @@ body{
 img{ max-width:100%; display:block; }
 a{ color:inherit; }
 
+/* ---------------- Desktop / mobile art swap ---------------- */
+.mobile-only{ display:none; }
+.art-section .art-bg.mobile-only{ display:none; } /* beats .art-section .art-bg's own display:block */
+
 /* ---------------- Buttons & links ---------------- */
 .btn-solid{
   display:inline-block;
@@ -230,6 +234,17 @@ a{ color:inherit; }
   justify-content:center;
 }
 
+/* Treatments + results, combined mobile art */
+.mobile-cta-book{
+  left:28.1%;
+  top:82%;
+  width:43.4%;
+  height:4.4%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
 /* ---------------- Footer ---------------- */
 .site-footer{
   background:var(--sand);
@@ -365,7 +380,28 @@ a{ color:inherit; }
   }
   .hamburger{ display:flex; }
 
-  .hero-cta-row{ flex-direction:column; align-items:flex-start; gap:12px; }
+  /* Swap in the mobile-cropped art + hide desktop-only hotspots */
+  .dt-only{ display:none; }
+  .mobile-only{ display:block; }
+  .art-section .art-bg.dt-only{ display:none; }
+  .art-section .art-bg.mobile-only{ display:block; }
+
+  .hero-cta-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+    left:9%;
+    top:57.5%;
+  }
+
+  .blob-photo{
+    left:7.7%;
+    top:56.8%;
+    width:88.4%;
+    height:37.8%;
+    -webkit-mask-image:url('img/mobile-blob-mask.png');
+    mask-image:url('img/mobile-blob-mask.png');
+  }
 
   .footer-top{ grid-template-columns:1fr 1fr; }
   .newsletter-form{ margin-left:0; }
