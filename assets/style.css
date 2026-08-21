@@ -249,18 +249,8 @@ a{ color:inherit; }
 }
 .mobile-treat-label.label-1{ left:3%;  top:15.9%; }
 .mobile-treat-label.label-2{ left:53%; top:15.9%; }
-.mobile-treat-label.label-3{ left:3%;  top:25.4%; }
-.mobile-treat-label.label-4{ left:53%; top:25.4%; }
-
-.mobile-cta-book{
-  left:28.1%;
-  top:82%;
-  width:43.4%;
-  height:4.4%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
+.mobile-treat-label.label-3{ left:3%;  top:26.6%; }
+.mobile-treat-label.label-4{ left:53%; top:26.6%; }
 
 /* ---------------- Footer ---------------- */
 .site-footer{
@@ -405,6 +395,11 @@ a{ color:inherit; }
   }
   .hamburger{ display:flex; }
 
+  /* mobile-hero.jpg already has "The Natural Edit" wordmark baked in up top —
+     the coded header logo would just duplicate it */
+  .logo{ display:none; }
+  .header-inner{ justify-content:flex-end; }
+
   /* Swap in the mobile-cropped art + hide desktop-only hotspots */
   .dt-only{ display:none; }
   .mobile-only{ display:block; }
@@ -429,7 +424,8 @@ a{ color:inherit; }
   }
 
   .blob-img{
-    object-position:50% 30%;
+    object-position:50% 28%;
+    transform:scale(1.18);
   }
 
   .footer-top{ grid-template-columns:1fr 1fr; }
