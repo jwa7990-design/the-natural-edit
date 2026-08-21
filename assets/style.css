@@ -9,6 +9,7 @@
   --cream:        #f3ece3;
   --cream-dark:   #eee7df;
   --sand:         #ede4dd;
+  --footer-blue:  #d2dce6;
   --brown:        #7a4a23;
   --brown-dark:   #5f3a1b;
   --navy:         #1f5e87;
@@ -217,12 +218,8 @@ a{ color:inherit; }
   width:100%;
   height:100%;
   object-fit:cover;
+  object-position:50% 22%; /* bias toward the upper portion, where a face usually sits */
 }
-.about-cta{
-  left:52.2%;
-  top:79.5%;
-}
-
 /* Treatments + results, combined desktop art */
 .anchor-mark{
   position:absolute;
@@ -254,8 +251,17 @@ a{ color:inherit; }
 
 /* ---------------- Footer ---------------- */
 .site-footer{
-  background:var(--sand);
-  padding:56px 6% 24px;
+  background:var(--footer-blue);
+  line-height:0; /* kill inline-img gap under the banner */
+}
+.footer-art-bg{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.footer-content{
+  line-height:normal;
+  padding:32px 6% 24px;
 }
 .footer-top{
   display:grid;
@@ -283,9 +289,8 @@ a{ color:inherit; }
   font-size:.85rem;
   opacity:.75;
   max-width:26ch;
-  margin-top:14px;
+  margin-top:0;
 }
-.footer-logo{ font-size:.72rem; }
 .footer-contact{
   font-size:.85rem;
   margin-top:14px;
@@ -408,6 +413,11 @@ a{ color:inherit; }
     height:37.8%;
     -webkit-mask-image:url('img/mobile-blob-mask.png');
     mask-image:url('img/mobile-blob-mask.png');
+  }
+
+  .blob-img{
+    object-position:50% 15%;
+    transform:scale(1.3); /* zoom in so the subject fills more of the blob — tune to taste */
   }
 
   .footer-top{ grid-template-columns:1fr 1fr; }
