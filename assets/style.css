@@ -236,21 +236,22 @@ a{ color:inherit; }
   height:1px;
 }
 /* Treatments + results, combined mobile art */
-.mobile-treat-label{
-  width:44%;
+.mobile-book-now{
+  left:23.2%;
+  top:37.4%;
+  width:51.8%;
+  height:4.6%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
-  font-family:var(--font-body);
+  font-family:var(--font-brush);
   font-weight:600;
-  font-size:.62rem;
-  letter-spacing:.04em;
-  line-height:1.25;
-  color:var(--brown-dark);
-  text-transform:uppercase;
+  font-size:clamp(1.3rem, 1rem + 1.5vw, 1.7rem);
+  color:var(--ink) !important;
+  text-decoration:none;
+  letter-spacing:.01em;
 }
-.mobile-treat-label.label-1{ left:3%;  top:15.9%; }
-.mobile-treat-label.label-2{ left:53%; top:15.9%; }
-.mobile-treat-label.label-3{ left:3%;  top:26.6%; }
-.mobile-treat-label.label-4{ left:53%; top:26.6%; }
 
 /* ---------------- Footer ---------------- */
 .site-footer{
