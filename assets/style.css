@@ -415,19 +415,8 @@ a{ color:inherit; }
     top:57.5%;
   }
 
-  .blob-photo{
-    left:44.2%;
-    top:42.5%;
-    width:55.8%;
-    height:43.5%;
-    -webkit-mask-image:url('img/mobile-blob-mask.png');
-    mask-image:url('img/mobile-blob-mask.png');
-  }
-
-  .blob-img{
-    object-position:50% 20%;
-    transform:scale(1.15);
-  }
+  /* Alisha's photo is baked directly into mobile-about.jpg now,
+     so the coded blob-photo overlay (dt-only) only shows on desktop */
 
   .footer-top{ grid-template-columns:1fr 1fr; }
   .newsletter-form{ margin-left:0; }
