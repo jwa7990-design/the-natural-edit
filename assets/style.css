@@ -14,8 +14,8 @@
   --brown-dark:   #5f3a1b;
   --navy:         #1f5e87;
   --navy-rgb:     31,94,135;
-  --sky-light:    #cdd8df;
-  --sky-light-rgb: 205,216,223;
+  --sky-light:    #ebebea;
+  --sky-light-rgb: 235,235,234;
   --ink:          #3a332c;
   --blush:        #e8a99c;
 
@@ -230,16 +230,6 @@ a{ color:inherit; }
   width:1px;
   height:1px;
 }
-.cta-book{
-  left:38%;
-  top:95.2%;
-  width:24%;
-  height:4.4%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
 /* Treatments + results, combined mobile art */
 .mobile-treat-label{
   width:44%;
