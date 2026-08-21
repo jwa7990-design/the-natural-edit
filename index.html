@@ -20,6 +20,7 @@
       <a href="#treatments">Treatments</a>
       <a href="#about">About</a>
       <a href="#results">Results</a>
+      <a href="#shop">Shop</a>
       <a href="#book" class="btn-solid nav-book">Book appointment</a>
     </nav>
 
@@ -67,46 +68,27 @@
   </section>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="site-footer" id="book">
-    <img src="assets/img/footer.jpg" alt="The Natural Edit" class="footer-art-bg">
+  <footer class="art-section site-footer" id="book">
+    <img src="assets/img/footer-desktop.jpg" alt="The Natural Edit — Enhancing natural beauty with expert care and a personal touch." class="art-bg dt-only">
+    <img src="assets/img/mobile-footer.jpg" alt="The Natural Edit — Subtle. Natural. Confident." class="art-bg mobile-only">
 
-    <div class="footer-content">
-    <div class="footer-top">
-      <div class="footer-col footer-brand">
-        <p>Enhancing natural beauty with expert care and a personal touch.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Quick links</h4>
-        <a href="#treatments">Treatments</a>
-        <a href="#about">About</a>
-        <a href="#results">Results</a>
-        <a href="#shop">Shop</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Information</h4>
-        <a href="#faq">FAQ</a>
-        <a href="#aftercare">Aftercare</a>
-        <a href="#gift-cards">Gift cards</a>
-        <a href="#privacy">Privacy policy</a>
-        <a href="#terms">Terms &amp; conditions</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Booking</h4>
-        <a href="#book" class="btn-outline-dark">Book appointment</a>
-        <p class="footer-contact">02 5124 3476<br>info@thenaturaledit.com.au</p>
-      </div>
+    <!-- Desktop link columns (headers + branding + copyright are baked into the art) -->
+    <div class="hotspot footer-col-links dt-only col-quicklinks">
+      <a href="#treatments">Treatments</a>
+      <a href="#about">About</a>
+      <a href="#results">Results</a>
+      <a href="#shop">Shop</a>
     </div>
 
-    <div class="footer-newsletter">
-      <p>Stay in the know</p>
-      <span>Expert tips, treatment updates and exclusive offers.</span>
-      <form class="newsletter-form" onsubmit="return false;">
-        <input type="email" placeholder="Your email address" required aria-label="Email address">
-        <button type="submit" aria-label="Subscribe">→</button>
-      </form>
+    <div class="hotspot footer-col-links dt-only col-information">
+      <a href="#faq">FAQ</a>
+      <a href="#aftercare">Aftercare</a>
+      <a href="#gift-cards">Gift cards</a>
+      <a href="#privacy">Privacy policy</a>
+      <a href="#terms">Terms &amp; conditions</a>
+    </div>
+
+    <div class="hotspot footer-col-links dt-only col-connect">
       <div class="social-icons">
         <a href="#" aria-label="Instagram">IG</a>
         <a href="#" aria-label="Facebook">FB</a>
@@ -114,8 +96,15 @@
       </div>
     </div>
 
-    <p class="footer-copyright">© The Natural Edit 2026 | All rights reserved</p>
+    <div class="hotspot footer-col-links dt-only col-booking">
+      <a href="#book" class="btn-outline-dark">Book appointment</a>
+      <p class="footer-contact">02 5124 3476<br>info@thenaturaledit.com.au</p>
     </div>
+
+    <!-- Mobile nav rows (labels + chevrons are baked into the art) -->
+    <a href="#about" class="hotspot mobile-footer-row row-1 mobile-only" aria-label="About"></a>
+    <a href="#treatments" class="hotspot mobile-footer-row row-2 mobile-only" aria-label="Treatments"></a>
+    <a href="#results" class="hotspot mobile-footer-row row-3 mobile-only" aria-label="Results"></a>
   </footer>
 
 </main>

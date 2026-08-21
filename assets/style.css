@@ -253,48 +253,28 @@ a{ color:inherit; }
   letter-spacing:.01em;
 }
 
-/* ---------------- Footer ---------------- */
-.site-footer{
-  background:var(--footer-blue);
-  line-height:0; /* kill inline-img gap under the banner */
+/* ---------------- Footer (headers, branding + copyright are baked into the art) ---------------- */
+.site-footer{ background:var(--cream); }
+
+.footer-col-links{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:13px;
 }
-.footer-art-bg{
-  width:100%;
-  height:auto;
-  display:block;
-}
-.footer-content{
-  line-height:normal;
-  padding:32px 6% 24px;
-}
-.footer-top{
-  display:grid;
-  grid-template-columns:1.4fr 1fr 1fr 1fr;
-  gap:32px;
-  padding-bottom:40px;
-  border-bottom:1px solid rgba(0,0,0,.08);
-}
-.footer-col h4{
-  font-size:.78rem;
-  text-transform:uppercase;
-  letter-spacing:.08em;
-  margin:0 0 14px;
-  color:var(--brown-dark);
-}
-.footer-col a{
-  display:block;
+.footer-col-links a{
   text-decoration:none;
   font-size:.9rem;
-  margin-bottom:10px;
+  color:var(--ink);
   opacity:.85;
 }
-.footer-col a:hover{ opacity:1; }
-.footer-brand p{
-  font-size:.85rem;
-  opacity:.75;
-  max-width:26ch;
-  margin-top:0;
-}
+.footer-col-links a:hover{ opacity:1; color:var(--brown); }
+
+.col-quicklinks{  left:27%;   top:32%; width:15%; }
+.col-information{ left:44%;   top:32%; width:17%; }
+.col-connect{      left:62.5%; top:32%; width:15%; }
+.col-booking{      left:79%;   top:32%; width:19%; }
+
 .footer-contact{
   font-size:.85rem;
   margin-top:14px;
@@ -302,47 +282,6 @@ a{ color:inherit; }
   line-height:1.6;
 }
 
-.footer-newsletter{
-  padding:36px 0;
-  border-bottom:1px solid rgba(0,0,0,.08);
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:18px 28px;
-}
-.footer-newsletter p{
-  font-family:var(--font-brush);
-  font-size:1.6rem;
-  margin:0;
-  color:var(--brown-dark);
-}
-.footer-newsletter span{
-  font-size:.85rem;
-  opacity:.75;
-  max-width:24ch;
-}
-.newsletter-form{
-  display:flex;
-  gap:8px;
-  margin-left:auto;
-}
-.newsletter-form input{
-  border:1px solid rgba(0,0,0,.2);
-  border-radius:999px;
-  padding:.7em 1.3em;
-  font-family:var(--font-body);
-  font-size:.85rem;
-  min-width:220px;
-}
-.newsletter-form button{
-  border:none;
-  background:var(--brown);
-  color:#fff;
-  width:40px;
-  border-radius:999px;
-  cursor:pointer;
-  font-size:1rem;
-}
 .social-icons{ display:flex; gap:10px; }
 .social-icons a{
   width:34px; height:34px;
@@ -353,12 +292,17 @@ a{ color:inherit; }
   text-decoration:none;
   letter-spacing:0;
 }
-.footer-copyright{
-  text-align:center;
-  font-size:.75rem;
-  opacity:.6;
-  margin:22px 0 0;
+.social-icons a:hover{ opacity:1; border-color:var(--brown); }
+
+/* Mobile nav rows — labels + chevrons are baked into mobile-footer.jpg;
+   these are just full-width invisible tap targets over each row */
+.mobile-footer-row{
+  left:0;
+  width:100%;
 }
+.mobile-footer-row.row-1{ top:48.3%; height:6.3%; }
+.mobile-footer-row.row-2{ top:54.6%; height:6.3%; }
+.mobile-footer-row.row-3{ top:60.9%; height:6.3%; }
 
 /* ---------------- Headline / brush-font helpers (reserved for future code-set text) ---------------- */
 .brush{ font-family:var(--font-brush); }
@@ -418,10 +362,4 @@ a{ color:inherit; }
   /* Alisha's photo is baked directly into mobile-about.jpg now,
      so the coded blob-photo overlay (dt-only) only shows on desktop */
 
-  .footer-top{ grid-template-columns:1fr 1fr; }
-  .newsletter-form{ margin-left:0; }
-}
-
-@media (max-width: 520px){
-  .footer-top{ grid-template-columns:1fr; }
 }
