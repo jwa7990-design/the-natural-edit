@@ -416,17 +416,17 @@ a{ color:inherit; }
   }
 
   .blob-photo{
-    left:7.7%;
-    top:56.8%;
-    width:88.4%;
-    height:37.8%;
+    left:44.2%;
+    top:42.5%;
+    width:55.8%;
+    height:43.5%;
     -webkit-mask-image:url('img/mobile-blob-mask.png');
     mask-image:url('img/mobile-blob-mask.png');
   }
 
   .blob-img{
-    object-position:50% 28%;
-    transform:scale(1.18);
+    object-position:50% 20%;
+    transform:scale(1.15);
   }
 
   .footer-top{ grid-template-columns:1fr 1fr; }
